@@ -31,7 +31,7 @@ export default withPageAuthRequired(
     if (data === undefined)
       return <div className="dataset-table-skeleton"></div>;
 
-    if (data.data.error_description)
+    if (data.data?.error_description)
       return (
         <div className="w-full h-[500px] flex justify-center items-center px-8">
           {data.data.error_description}

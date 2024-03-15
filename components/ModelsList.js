@@ -1,9 +1,8 @@
 "use client";
-import useSWR, { mutate } from "swr";
+import useSWR from "swr";
 import { withPageAuthRequired } from "@auth0/nextjs-auth0/client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { toast } from "react-toastify";
 
 const fetcher = async (uri) => {
   const response = await fetch(uri);
